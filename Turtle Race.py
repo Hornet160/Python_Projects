@@ -10,7 +10,16 @@ print(user_bet)
 colors=['red','yellow','blue','orange','green','purple']
 y_positions=[-70,-40,-10,20,50,80]
 all_turtles=[]
+#draw the finish line
+refery=Turtle(shape="circle")
+y_draw_line=[80,-80]
+refery.penup()
 
+for line in range(0,2):
+
+    draw_line=refery.goto(x=220,y=y_draw_line[line])
+    refery.pendown()
+# Turtle positioning 
 for turtle_index in range(0,6):
     new_turtle = Turtle(shape="turtle")
     new_turtle.penup()
@@ -19,7 +28,7 @@ for turtle_index in range(0,6):
     all_turtles.append(new_turtle)
 if user_bet:
     is_race_on=True
-# new_turtle.speed("slow")
+# Turtle movement
 while is_race_on:
     for turtle in all_turtles:
         if turtle.xcor()>210:

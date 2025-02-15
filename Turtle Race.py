@@ -10,7 +10,8 @@ print(user_bet)
 colors=['red','yellow','blue','orange','green','purple']
 y_positions=[-70,-40,-10,20,50,80]
 all_turtles=[]
-#draw the finish line
+
+#Refery draws the finish line
 refery=Turtle(shape="circle")
 y_draw_line=[80,-80]
 refery.penup()
